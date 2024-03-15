@@ -21,13 +21,12 @@ resource "azurerm_resource_group" "terraformrg" {
 }
 
 resource "azurerm_storage_account" "nayakstorage1334" {
-    name                = "nayakstorage1334"
+    name                = "nayakstorage51334"
     resource_group_name = azurerm_resource_group.terraformrg.name
     location            = azurerm_resource_group.terraformrg.location
     account_tier        = "Standard"
     account_replication_type = "LRS"
     account_kind        = "StorageV2"
-  
     tags = {
         enviroment = "dev"
     }

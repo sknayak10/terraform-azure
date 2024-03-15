@@ -34,5 +34,6 @@ az --version
 
 az login
 
-Note: create a new user in Entra ID, give global admin, then under properties enable "Access management for Azure resources" . Go to subscription under IAM give Owner access.
-
+Notes: 
+1. create a new user in Entra ID, give global admin, then under properties enable "Access   management for Azure resources" . Go to subscription under IAM give Owner access.
+2. storage account name should be unique, hence always use dynamic condition for storage account name assignment and while referring to it
