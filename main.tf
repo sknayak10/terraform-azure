@@ -31,3 +31,9 @@ resource "azurerm_storage_account" "nayakstorage1334" {
 
 }
 
+resource "azurerm_storage_container" "data" {
+    name = "data"
+    storage_account_name = azurerm_storage_account.nayakstorage1334.name
+    container_access_type = "blob"
+  
+}
